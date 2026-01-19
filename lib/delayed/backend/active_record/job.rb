@@ -3,6 +3,8 @@
 module Delayed
   module Backend
     module ActiveRecord
+      # A job object that is persisted to the database.
+      # Contains the work object as a YAML field.
       class Job < ::ActiveRecord::Base
         include Delayed::Backend::Base
 
